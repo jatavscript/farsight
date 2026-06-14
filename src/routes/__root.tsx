@@ -81,10 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "AI-powered railway control room — predict, prevent, protect." },
       { name: "author", content: "FARSIGHT" },
       { property: "og:title", content: "FARSIGHT · Railway Intelligence" },
-      { property: "og:description", content: "Predict. Prevent. Protect." },
+      { property: "og:description", content: "AI-powered railway control room — predict, prevent, protect." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "FARSIGHT · Railway Intelligence" },
+      { name: "twitter:description", content: "AI-powered railway control room — predict, prevent, protect." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/fbe382fd-12e6-4dd9-bb6e-ddfe1cd1e74e" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/fbe382fd-12e6-4dd9-bb6e-ddfe1cd1e74e" },
     ],
     links: [
       {
