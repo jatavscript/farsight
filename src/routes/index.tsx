@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useSimulation } from "@/lib/simulation/useSimulation";
 import { DEFAULT_SCENARIO } from "@/lib/simulation/engine";
