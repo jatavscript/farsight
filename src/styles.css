@@ -149,8 +149,32 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+@keyframes shake-x {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-1.5px); }
+  40% { transform: translateX(1.5px); }
+  60% { transform: translateX(-1px); }
+  80% { transform: translateX(1px); }
+}
+@keyframes critical-glow {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+@keyframes dash-flow {
+  to { stroke-dashoffset: -40; }
+}
+@keyframes med-pulse {
+  0%, 100% { r: 7; opacity: 1; }
+  50% { r: 10; opacity: 0.85; }
+}
 
 .animate-pulse-ring { animation: pulse-ring 1.4s ease-out infinite; }
 .animate-blink { animation: blink 1s ease-in-out infinite; }
 .animate-ticker { animation: ticker 40s linear infinite; }
 .animate-sweep { animation: sweep 6s linear infinite; transform-origin: center; }
+.animate-shake-x { animation: shake-x 0.45s ease-in-out infinite; }
+.animate-critical-glow { animation: critical-glow 1.2s ease-in-out infinite; }
+.animate-dash-flow { animation: dash-flow 1.2s linear infinite; }
+.animate-med-pulse { animation: med-pulse 1.1s ease-in-out infinite; }
+.smooth-agent { transition: transform 0.9s linear; }
+.smooth-train { transition: transform 0.45s linear; }
