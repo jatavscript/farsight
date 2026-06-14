@@ -269,7 +269,7 @@ function SimulationMapInner({ state }: { state: SimState }) {
               {t.name}
             </text>
             <text x={trainW + 6} y="14" fontSize="8" fontFamily="var(--font-mono)"
-              fill={t.status === "delayed" ? "var(--color-risk-high)" : "var(--color-muted-foreground)"}>
+              fill="var(--color-muted-foreground)">
               {t.status.toUpperCase()}
             </text>
           </g>
