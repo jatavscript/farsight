@@ -1,7 +1,11 @@
+import { useEffect, useState } from "react";
 import type { SimState } from "@/lib/simulation/types";
 
 export function Header({ state }: { state: SimState }) {
-  const time = new Date(Date.now() + state.tick * 250).toLocaleTimeString("en-IN", { hour12: false });
+  const [time, setTime] = useState("--:--:--");
+  useEffect(() => {
+    setTime(new Date(Date.now() + state.tick * 250).toLocaleTimeString("en-IN", { hour12: false }));
+  }, [state.tick]);
   const overall = state.platforms.length
     ? state.platforms.reduce((a, p) => a + p.density, 0) / state.platforms.length
     : 0;
