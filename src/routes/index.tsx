@@ -25,6 +25,15 @@ export const Route = createFileRoute("/")({
 });
 
 function Dashboard() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  if (!mounted) {
+    return <div className="min-h-screen flex items-center justify-center font-mono text-xs tracking-widest text-muted-foreground">INITIALIZING FARSIGHT CONTROL ROOM…</div>;
+  }
+  return <DashboardInner />;
+}
+
+function DashboardInner() {
   const { state, reset, setRunning, setSpeed } = useSimulation(DEFAULT_SCENARIO);
 
   return (
