@@ -4,7 +4,7 @@
 
 FARSIGHT is an Agentic AI-powered Railway Intelligence Platform that predicts congestion, simulates railway station behavior using autonomous agents, and recommends proactive interventions before incidents occur.
 
-🌐 Live Demo: https://farsight.lovable.app
+🌐 Live Demo: https://farsight-fawn.vercel.app
 
 ---
 
@@ -135,7 +135,7 @@ AI & Simulation
 
 Deployment
 
-* Lovable
+* Vercel
 * GitHub
 
 ---
@@ -170,7 +170,7 @@ Autonomous Actions
 
 # Live Demo
 
-🌐 https://farsight.lovable.app
+🌐 https://farsight-fawn.vercel.app
 
 ---
 
